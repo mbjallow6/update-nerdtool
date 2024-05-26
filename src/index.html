@@ -35,9 +35,9 @@
 
                 <br><br>
 
-                <input class="btn btn-info btn-sm" type="button" id="connectButton" value="Connect" />
-                <input class="btn btn-info btn-sm" type="button" id="copyTraceButton" value="Copy Trace" />
-                <input class="btn btn-warning btn-sm" type="button" id="disconnectButton" value="Disconnect" />
+                <input class="btn button-primary btn-sm" type="button" id="connectButton" value="Connect" />
+                <input class="btn button-primary btn-sm" type="button" id="copyTraceButton" value="Copy Trace" />
+                <input class="btn button-secondary btn-sm" type="button" id="disconnectButton" value="Disconnect" />
                 <input class="btn btn-danger btn-sm" type="button" id="eraseButton" value="Erase Flash" />
                 <br>
 
@@ -52,14 +52,19 @@
                             <tr>
                                 <th>Flash Address</th>
                                 <th>File</th>
-                                <th></th>
+                                <th>
+                                    <a href="/assets/programs/blink.bin" download> download 
+
+                                    </a>
+
+                                </th>
                             </tr>
                         </thead>
                         <tbody id="tableBody">
                         </tbody>
                     </table>
-                    <input class="btn btn-info btn-sm" type="button" id="addFile" value="Add File" />
-                    <input class="btn btn-info btn-sm" type="button" id="programButton" value="Program" />
+                    <input class="btn button-primary btn-sm" type="button" id="addFile" value="Add File" />
+                    <input class="btn button-primary btn-sm" type="button" id="programButton" value="Program" />
                 </div>
                 <output id="list"></output>
                 <hr/>
@@ -75,9 +80,9 @@
 
                 <br><br>
 
-                <input class="btn btn-info" type="button" id="consoleStartButton" value="Start" />
-                <input class="btn btn-info" type="button" id="consoleStopButton" value="Stop" />
-                <input class="btn btn-info" type="button" id="resetButton" value="Reset" />
+                <input class="btn button-primary" type="button" id="consoleStartButton" value="Start" />
+                <input class="btn button-primary" type="button" id="consoleStopButton" value="Stop" />
+                <input class="btn button-primary" type="button" id="resetButton" value="Reset" />
                 <hr/>
             </div>
             <div id="terminal"></div>
@@ -93,5 +98,24 @@
                document.getElementById("main").style.display = "none";
             }
         </script>
+
+        <style>
+            .button-primary{
+                color: #fff;
+                background-color: #5CF29D;
+                border-color: #0df672;
+                
+            }
+            .button-secondary{
+                color: #fff;
+                background-color: #1E354A;
+                border-color: #042647;
+            }
+            .button-secondary:hover{
+                color: #fff;
+                background-color: #1e354aa3;
+                border-color: #042647;
+            }
+        </style>
     </body>
 </html>
