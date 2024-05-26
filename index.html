@@ -32,10 +32,10 @@
 
                 <br><br>
 
-                <input class="btn button-primary btn-sm" type="button" id="connectButton" value="Connect" />
-                <input class="btn button-primary btn-sm" type="button" id="copyTraceButton" value="Copy Trace" />
-                <input class="btn button-secondary btn-sm" type="button" id="disconnectButton" value="Disconnect" />
-                <input class="btn btn-danger btn-sm" type="button" id="eraseButton" value="Erase Flash" />
+                <input class="btn button-primary btn-sm" type="button" id="connectButton" value="Connect">
+                <input class="btn button-primary btn-sm" type="button" id="copyTraceButton" value="Copy Trace">
+                <input class="btn button-secondary btn-sm" type="button" id="disconnectButton" value="Disconnect">
+                <input class="btn btn-danger btn-sm" type="button" id="eraseButton" value="Erase Flash">
                 <br>
 
                 <div class="alert alert-danger alert-dismissible" id="alertDiv" style="margin-top: 10px; display: none">
@@ -50,7 +50,7 @@
                                 <th>Flash Address</th>
                                 <th>File</th>
                                 <th>
-                                    <a href="/assets/programs/blink.bin" download> download 
+                                    <a href="up_/assets/programs/blink.bin" download=""> download 
 
                                     </a>
 
@@ -60,8 +60,8 @@
                         <tbody id="tableBody">
                         </tbody>
                     </table>
-                    <input class="btn button-primary btn-sm" type="button" id="addFile" value="Add File" />
-                    <input class="btn button-primary btn-sm" type="button" id="programButton" value="Program" />
+                    <input class="btn button-primary btn-sm" type="button" id="addFile" value="Add File">
+                    <input class="btn button-primary btn-sm" type="button" id="programButton" value="Program">
                 </div>
                 <output id="list"></output>
                 <hr>
@@ -77,42 +77,42 @@
 
                 <br><br>
 
-                <input class="btn button-primary" type="button" id="consoleStartButton" value="Start" />
-                <input class="btn button-primary" type="button" id="consoleStopButton" value="Stop" />
-                <input class="btn button-primary" type="button" id="resetButton" value="Reset" />
-                <hr/>
+                <input class="btn button-primary" type="button" id="consoleStartButton" value="Start">
+                <input class="btn button-primary" type="button" id="consoleStopButton" value="Stop">
+                <input class="btn button-primary" type="button" id="resetButton" value="Reset">
+                <hr>
             </div>
             <div id="terminal"></div>
         </div>
-        <script src="index.ts" type="module"></script>
-        <script>
-            // Safari 3.0+ "[object HTMLElementConstructor]"
-            var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && window['safari'].pushNotification));
+        <script src="index.c9709cc1.js" type="module"></script>
+        <script>// Safari 3.0+ "[object HTMLElementConstructor]"
+var isSafari = /constructor/i.test(window.HTMLElement) || function(p) {
+    return p.toString() === "[object SafariRemoteNotification]";
+}(!window["safari"] || typeof safari !== "undefined" && window["safari"].pushNotification);
+if (isSafari) {
+    document.getElementById("safariErr").style.display = "inline";
+    document.getElementById("main").style.display = "none";
+}
 
-            if(isSafari)
-            {
-               document.getElementById("safariErr").style.display = "inline";
-               document.getElementById("main").style.display = "none";
-            }
-        </script>
+</script>
 
-        <style>
-            .button-primary{
-                color: #fff;
-                background-color: #5CF29D;
-                border-color: #0df672;
-                
-            }
-            .button-secondary{
-                color: #fff;
-                background-color: #1E354A;
-                border-color: #042647;
-            }
-            .button-secondary:hover{
-                color: #fff;
-                background-color: #1e354aa3;
-                border-color: #042647;
-            }
-        </style>
+        <style>.button-primary {
+  color: #fff;
+  background-color: #5cf29d;
+  border-color: #0df672;
+}
+
+.button-secondary {
+  color: #fff;
+  background-color: #1e354a;
+  border-color: #042647;
+}
+
+.button-secondary:hover {
+  color: #fff;
+  background-color: #1e354aa3;
+  border-color: #042647;
+}
+</style>
     </body>
 </html>
